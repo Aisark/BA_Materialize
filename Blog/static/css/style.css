@@ -1,0 +1,105 @@
+/*----------- Botones Personalizados------------------------------------------*/
+a.largeButton {
+  color: white; text-transform: uppercase;
+  font-weight: 700; font-size: 14px;
+  display: inline-block;
+  padding: 10px 20px; border-bottom: 3px solid;
+  margin-top: 20px;
+}
+.homeBgColor { background: #38a9e3; }
+.homeBgColor:hover { background-color: #16709f; }
+a.largeButton.homeBgColor { border-color: #16709f; }
+
+/*-------------------------------- Logo---------------------------------------*/
+
+#logoba{max-height:  400px;max-width: 300px;margin-bottom: -15px;}
+.nav-wrapper img{height: 60px;}
+
+/*-----------------------------Navegador--------------------------------------*/
+
+.navbar-fixed .black{background-color: RGBA(0, 0, 0, 0.8) !important;}
+.menu{background-color: black;}
+
+/*-----------------------INDICADORES DEL SLIDER-------------------------------*/
+.slider .indicators .indicator-item {
+  background-color: #666666;
+  border: 3px solid #ffffff;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.slider .indicators .indicator-item.active {background-color: #ffffff;}
+.slider .indicators {bottom: 60px;z-index: 100;/* text-align: left; */}
+.slider{margin-bottom: -40px;}
+
+
+/*------------------TITULOS DE LAS SECCIONES----------------------------------*/
+.section-title { border-top: 4px solid; margin-bottom: 25px; margin-top: 30px;}
+.section-title h2 {
+  display: inline-block; padding: 20px 35px;
+  color: white; text-transform: uppercase; font-weight: 300; margin: 0; font-size: 20px;
+}
+
+/*-------------------------------Programas------------------------------------*/
+#programas {height: 550px;}
+#programas  .row #pro-caru .row .col {margin-bottom: -80px !important;}
+#prog .section-title { border-color: #f50057; }
+#prog h2 { background-color: #f06292;width: 100%; }
+
+/*------------------------------carousel--------------------------------------*/
+.carousel .carousel-item {width:200px !important;}
+.card .card-title{font-size: 15px;}
+
+/*------------------------------Videos----------------------------------------*/
+.rvs-container.rvs-xs.rvs-sm.rvs-md.rvs-lg{max-height: 385px;}
+#videos .section-title { border-color: #0277bd;}
+#videos h2 { background-color: #4fc3f7;width: 100%; font-size: 15px;}
+
+/*------------------------------Transmision-----------------------------------*/
+#transmision {height: 650px;}
+#trans .section-title { border-color: #d50000; }
+#trans h2 { background-color: #f44336 ; width: 100%;}
+#titu-trans{margin-bottom: 0px;}
+
+/*------------------------------Noticias--------------------------------------*/
+#noti .section-title { border-color: #0277bd; }
+#noti h2 { background-color: #4fc3f7; }
+
+/*------------------------------thumbnails------------------------------------*/
+
+#noti .row .col .card {height: 200px; width: 200px; overflow: hidden;}
+#noti .row .col .card .card-image img{
+  width: 400px;
+  height: 400px;
+  -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+}
+#noti .row .col .card .card-image img:hover{width: 300px;height: 300px;}
+
+/*------------------------------------------------------------------------------
+                               SOLO PARA CHROME
+------------------------------------------------------------------------------*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+
+  #logoba{max-height:  300px;max-width: 300px;}
+  @media (max-width: 500px) {#logoba{max-height:  200px;max-width: 200px;}}
+
+}
+/*------------------------------------------------------------------------------
+                               Media Querys
+------------------------------------------------------------------------------*/
+@media (max-width: 800px){#transmision {height: 500px;}}
+@media (max-width: 768px){
+  .carousel .carousel-item{width:200px !important;}
+  .card .card-title{font-size: 15px;}
+  .section-title h2{ font-size: 15px;width: 100%;}
+  #transmision {height: 480px;}
+}
+@media (max-width: 435px){
+  #programas {height: 880px;}
+  #transmision {height: 350px;}
+  .carousel .carousel-item {width:150px !important;}
+}

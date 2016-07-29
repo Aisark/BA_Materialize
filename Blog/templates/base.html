@@ -1,0 +1,76 @@
+{% load staticfiles %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Banda Ancha</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/materialize.min.css' %}" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css/rvslider.min.css' %}" media="all" title="no title" charset="utf-8">
+    {% block head %}{% endblock head %}
+  </head>
+  <body>
+    <div id="fb-root"></div>
+    <script src="{% static 'js/facebook.js' %}" charset="utf-8"></script>
+
+
+    <!--NAVEGADOR-->
+    <div class="menu">
+      <nav class="black" role="navigation">
+
+        <!--Div contenedor Nav-->
+        <div class="nav-wrapper container">
+
+          <a href="#" class="brand-logo"><img src="{% static 'img/logo_banda_ancha.png' %}" alt="" /></a> <!--Logo-->
+
+          <!--Items-->
+          <ul class="right hide-on-med-and-down">
+            <li class="active">
+              <a href="#">Menu</a>
+            </li>
+            <li>
+              <a href="#">Fotos</a>
+            </li>
+            <li>
+              <a href="#">Noticias</a>
+            </li>
+          </ul>
+          <!--/Items-->
+
+          <!--Items Responsive-->
+          <ul class="side-nav" id="slide-out">
+            <li>
+              <a href="#">Menu</a>
+            </li>
+            <li>
+              <a href="#">Fotos</a>
+            </li>
+            <li>
+              <a href="#">Noticias</a>
+            </li>
+          </ul>
+          <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+          <!--/Items Responsive-->
+
+        </div>
+        <!--/Div contenedor Nav-->
+
+      </nav>
+    </div>
+    <!--/NAVEGADOR-->
+
+    {% block content %}{% endblock content %}
+
+
+    <script src="{% static 'js/jquery-2.2.4.min.js' %}" charset="utf-8"></script>
+    <script src="{% static 'js/materialize.min.js' %}" charset="utf-8"></script>
+    <script src="{% static 'js/rvslider.min.js' %}" charset="utf-8"></script>
+    <script src="{% static 'js/headroom.min.js' %}" charset="utf-8"></script>
+    {% block js %}{% endblock js %}
+    <script src="{% static 'js/init.js' %}"></script>
+    <script src="{% static 'js/headroom.js' %}" charset="utf-8"></script>
+
+  </body>
+</html>
